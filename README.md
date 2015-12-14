@@ -1,1 +1,1 @@
-# USBTelescopeController
+# FocusControl
