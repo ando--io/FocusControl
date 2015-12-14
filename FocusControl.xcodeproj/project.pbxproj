@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		466F0D69626F5C0CEB68FFF9 /* Pods_FocusControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F68AEEE59FF1A223F0A6067 /* Pods_FocusControl.framework */; };
+		F07812481C162283004EDF58 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F07812471C162283004EDF58 /* AppDelegate.m */; };
+		F078124B1C162283004EDF58 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F078124A1C162283004EDF58 /* main.m */; };
+		F078124D1C162283004EDF58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F078124C1C162283004EDF58 /* Assets.xcassets */; };
+		F07812501C162283004EDF58 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F078124E1C162283004EDF58 /* MainMenu.xib */; };
+		F07812581C162747004EDF58 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = F07812571C162747004EDF58 /* Podfile */; };
+		F07812601C1629E5004EDF58 /* USBFocusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F078125E1C1629E5004EDF58 /* USBFocusViewController.m */; };
+		F07812611C1629E5004EDF58 /* USBFocusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F078125F1C1629E5004EDF58 /* USBFocusViewController.xib */; };
+		F078A0021C1A22A8004EDF58 /* USBFocusDeviceState.m in Sources */ = {isa = PBXBuildFile; fileRef = F078A0011C1A22A8004EDF58 /* USBFocusDeviceState.m */; };
+		F078A0091C1C14B2004EDF58 /* USBFocusDeviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F078A0081C1C14B2004EDF58 /* USBFocusDeviceManager.m */; };
+		F078A00C1C1C2FF2004EDF58 /* USBFocusDeviceViewModelImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = F078A00B1C1C2FF2004EDF58 /* USBFocusDeviceViewModelImpl.m */; };
+		F078A0181C1D7889004EDF58 /* USBFocusDeviceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = F078A0171C1D7889004EDF58 /* USBFocusDeviceImpl.m */; };
+		F078A01A1C1EF0A7004EDF58 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F078A0191C1EF0A7004EDF58 /* Credits.rtf */; };
+		F078A01C1C1EF147004EDF58 /* LICENCE in Resources */ = {isa = PBXBuildFile; fileRef = F078A01B1C1EF147004EDF58 /* LICENCE */; };
+		F078A0241C1F382A004EDF58 /* USBUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = F078A0231C1F382A004EDF58 /* USBUtil.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1F68AEEE59FF1A223F0A6067 /* Pods_FocusControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FocusControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F3E59677628A69D83A8F80F /* Pods-FocusControl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FocusControl.release.xcconfig"; path = "Pods/Target Support Files/Pods-FocusControl/Pods-FocusControl.release.xcconfig"; sourceTree = "<group>"; };
+		40B188B35FFE10312B9B4848 /* Pods-USBTelescopeController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-USBTelescopeController.release.xcconfig"; path = "Pods/Target Support Files/Pods-USBTelescopeController/Pods-USBTelescopeController.release.xcconfig"; sourceTree = "<group>"; };
+		4C46DABCFE13697C2E4B7BCD /* Pods-FocusControl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FocusControl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FocusControl/Pods-FocusControl.debug.xcconfig"; sourceTree = "<group>"; };
+		BE7BAD86BAD221F63CCF4CA6 /* Pods_USBTelescopeController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_USBTelescopeController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2BAA2868AB4CA68055D3053 /* Pods-USBTelescopeController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-USBTelescopeController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-USBTelescopeController/Pods-USBTelescopeController.debug.xcconfig"; sourceTree = "<group>"; };
+		F07812431C162283004EDF58 /* FocusControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FocusControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F07812461C162283004EDF58 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F07812471C162283004EDF58 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F078124A1C162283004EDF58 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F078124C1C162283004EDF58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F078124F1C162283004EDF58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F07812511C162283004EDF58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F07812571C162747004EDF58 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		F078125D1C1629E5004EDF58 /* USBFocusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USBFocusViewController.h; sourceTree = "<group>"; };
+		F078125E1C1629E5004EDF58 /* USBFocusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USBFocusViewController.m; sourceTree = "<group>"; };
+		F078125F1C1629E5004EDF58 /* USBFocusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = USBFocusViewController.xib; sourceTree = "<group>"; };
+		F078A0001C1A22A8004EDF58 /* USBFocusDeviceState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USBFocusDeviceState.h; sourceTree = "<group>"; };
+		F078A0011C1A22A8004EDF58 /* USBFocusDeviceState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USBFocusDeviceState.m; sourceTree = "<group>"; };
+		F078A0031C1A22EE004EDF58 /* USBFocusDeviceViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USBFocusDeviceViewModel.h; sourceTree = "<group>"; };
+		F078A0041C1AFDCF004EDF58 /* ParameterHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParameterHistory.h; sourceTree = "<group>"; };
+		F078A0051C1AFDE2004EDF58 /* ParameterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParameterState.h; sourceTree = "<group>"; };
+		F078A0071C1C14B2004EDF58 /* USBFocusDeviceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USBFocusDeviceManager.h; sourceTree = "<group>"; };
+		F078A0081C1C14B2004EDF58 /* USBFocusDeviceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USBFocusDeviceManager.m; sourceTree = "<group>"; };
+		F078A00A1C1C2FF2004EDF58 /* USBFocusDeviceViewModelImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USBFocusDeviceViewModelImpl.h; sourceTree = "<group>"; };
+		F078A00B1C1C2FF2004EDF58 /* USBFocusDeviceViewModelImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USBFocusDeviceViewModelImpl.m; sourceTree = "<group>"; };
+		F078A0151C1D7870004EDF58 /* USBFocusDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USBFocusDevice.h; sourceTree = "<group>"; };
+		F078A0161C1D7889004EDF58 /* USBFocusDeviceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USBFocusDeviceImpl.h; sourceTree = "<group>"; };
+		F078A0171C1D7889004EDF58 /* USBFocusDeviceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USBFocusDeviceImpl.m; sourceTree = "<group>"; };
+		F078A0191C1EF0A7004EDF58 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		F078A01B1C1EF147004EDF58 /* LICENCE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENCE; sourceTree = "<group>"; };
+		F078A01D1C1F12E8004EDF58 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		F078A0221C1F37A7004EDF58 /* USBUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = USBUtil.h; sourceTree = "<group>"; };
+		F078A0231C1F382A004EDF58 /* USBUtil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = USBUtil.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F07812401C162283004EDF58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				466F0D69626F5C0CEB68FFF9 /* Pods_FocusControl.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C3769DDC433FEB0276C26183 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C2BAA2868AB4CA68055D3053 /* Pods-USBTelescopeController.debug.xcconfig */,
+				40B188B35FFE10312B9B4848 /* Pods-USBTelescopeController.release.xcconfig */,
+				4C46DABCFE13697C2E4B7BCD /* Pods-FocusControl.debug.xcconfig */,
+				3F3E59677628A69D83A8F80F /* Pods-FocusControl.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D0474758046CA68177DDEC2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F078A01D1C1F12E8004EDF58 /* IOKit.framework */,
+				BE7BAD86BAD221F63CCF4CA6 /* Pods_USBTelescopeController.framework */,
+				1F68AEEE59FF1A223F0A6067 /* Pods_FocusControl.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F078123A1C162283004EDF58 = {
+			isa = PBXGroup;
+			children = (
+				F07812571C162747004EDF58 /* Podfile */,
+				F07812451C162283004EDF58 /* FocusControl */,
+				F07812441C162283004EDF58 /* Products */,
+				C3769DDC433FEB0276C26183 /* Pods */,
+				D0474758046CA68177DDEC2B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F07812441C162283004EDF58 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F07812431C162283004EDF58 /* FocusControl.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F07812451C162283004EDF58 /* FocusControl */ = {
+			isa = PBXGroup;
+			children = (
+				F0789FFF1C1A2284004EDF58 /* Model */,
+				F07812591C162967004EDF58 /* Components */,
+				F07812461C162283004EDF58 /* AppDelegate.h */,
+				F07812471C162283004EDF58 /* AppDelegate.m */,
+				F078124C1C162283004EDF58 /* Assets.xcassets */,
+				F078124E1C162283004EDF58 /* MainMenu.xib */,
+				F078A0191C1EF0A7004EDF58 /* Credits.rtf */,
+				F078A01B1C1EF147004EDF58 /* LICENCE */,
+				F07812511C162283004EDF58 /* Info.plist */,
+				F07812491C162283004EDF58 /* Supporting Files */,
+				F078A0221C1F37A7004EDF58 /* USBUtil.h */,
+				F078A0231C1F382A004EDF58 /* USBUtil.c */,
+			);
+			path = FocusControl;
+			sourceTree = SOURCE_ROOT;
+		};
+		F07812491C162283004EDF58 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F078124A1C162283004EDF58 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F07812591C162967004EDF58 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F078125C1C16298A004EDF58 /* USBFocus */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		F078125A1C16297A004EDF58 /* Hardware */ = {
+			isa = PBXGroup;
+			children = (
+				F078A0151C1D7870004EDF58 /* USBFocusDevice.h */,
+				F078A0161C1D7889004EDF58 /* USBFocusDeviceImpl.h */,
+				F078A0171C1D7889004EDF58 /* USBFocusDeviceImpl.m */,
+			);
+			name = Hardware;
+			sourceTree = "<group>";
+		};
+		F078125B1C162983004EDF58 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F078125D1C1629E5004EDF58 /* USBFocusViewController.h */,
+				F078125E1C1629E5004EDF58 /* USBFocusViewController.m */,
+				F078125F1C1629E5004EDF58 /* USBFocusViewController.xib */,
+				F078A0031C1A22EE004EDF58 /* USBFocusDeviceViewModel.h */,
+				F078A00A1C1C2FF2004EDF58 /* USBFocusDeviceViewModelImpl.h */,
+				F078A00B1C1C2FF2004EDF58 /* USBFocusDeviceViewModelImpl.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		F078125C1C16298A004EDF58 /* USBFocus */ = {
+			isa = PBXGroup;
+			children = (
+				F078125B1C162983004EDF58 /* Controller */,
+				F078125A1C16297A004EDF58 /* Hardware */,
+				F078A0071C1C14B2004EDF58 /* USBFocusDeviceManager.h */,
+				F078A0081C1C14B2004EDF58 /* USBFocusDeviceManager.m */,
+			);
+			name = USBFocus;
+			sourceTree = "<group>";
+		};
+		F0789FFF1C1A2284004EDF58 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F078A0001C1A22A8004EDF58 /* USBFocusDeviceState.h */,
+				F078A0011C1A22A8004EDF58 /* USBFocusDeviceState.m */,
+				F078A0041C1AFDCF004EDF58 /* ParameterHistory.h */,
+				F078A0051C1AFDE2004EDF58 /* ParameterState.h */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F07812421C162283004EDF58 /* FocusControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F07812541C162283004EDF58 /* Build configuration list for PBXNativeTarget "FocusControl" */;
+			buildPhases = (
+				DDA38B80AA1FD5899E0DC302 /* Check Pods Manifest.lock */,
+				F078123F1C162283004EDF58 /* Sources */,
+				F07812401C162283004EDF58 /* Frameworks */,
+				F07812411C162283004EDF58 /* Resources */,
+				1C1F1E03F9DD897697789D62 /* Copy Pods Resources */,
+				196DA804A01816A2AFDE6F53 /* Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FocusControl;
+			productName = USBTelescopeController;
+			productReference = F07812431C162283004EDF58 /* FocusControl.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F078123B1C162283004EDF58 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = ando.io;
+				TargetAttributes = {
+					F07812421C162283004EDF58 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = F078123E1C162283004EDF58 /* Build configuration list for PBXProject "FocusControl" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F078123A1C162283004EDF58;
+			productRefGroup = F07812441C162283004EDF58 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F07812421C162283004EDF58 /* FocusControl */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F07812411C162283004EDF58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F078A01C1C1EF147004EDF58 /* LICENCE in Resources */,
+				F078A01A1C1EF0A7004EDF58 /* Credits.rtf in Resources */,
+				F07812611C1629E5004EDF58 /* USBFocusViewController.xib in Resources */,
+				F07812581C162747004EDF58 /* Podfile in Resources */,
+				F078124D1C162283004EDF58 /* Assets.xcassets in Resources */,
+				F07812501C162283004EDF58 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		196DA804A01816A2AFDE6F53 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FocusControl/Pods-FocusControl-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1C1F1E03F9DD897697789D62 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FocusControl/Pods-FocusControl-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDA38B80AA1FD5899E0DC302 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F078123F1C162283004EDF58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F07812601C1629E5004EDF58 /* USBFocusViewController.m in Sources */,
+				F078124B1C162283004EDF58 /* main.m in Sources */,
+				F078A0241C1F382A004EDF58 /* USBUtil.c in Sources */,
+				F07812481C162283004EDF58 /* AppDelegate.m in Sources */,
+				F078A0091C1C14B2004EDF58 /* USBFocusDeviceManager.m in Sources */,
+				F078A00C1C1C2FF2004EDF58 /* USBFocusDeviceViewModelImpl.m in Sources */,
+				F078A0181C1D7889004EDF58 /* USBFocusDeviceImpl.m in Sources */,
+				F078A0021C1A22A8004EDF58 /* USBFocusDeviceState.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F078124E1C162283004EDF58 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F078124F1C162283004EDF58 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F07812521C162283004EDF58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F07812531C162283004EDF58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F07812551C162283004EDF58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C46DABCFE13697C2E4B7BCD /* Pods-FocusControl.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FocusControl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.ando.focuscontrol;
+				PRODUCT_NAME = FocusControl;
+			};
+			name = Debug;
+		};
+		F07812561C162283004EDF58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F3E59677628A69D83A8F80F /* Pods-FocusControl.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FocusControl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.ando.focuscontrol;
+				PRODUCT_NAME = FocusControl;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F078123E1C162283004EDF58 /* Build configuration list for PBXProject "FocusControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F07812521C162283004EDF58 /* Debug */,
+				F07812531C162283004EDF58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F07812541C162283004EDF58 /* Build configuration list for PBXNativeTarget "FocusControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F07812551C162283004EDF58 /* Debug */,
+				F07812561C162283004EDF58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F078123B1C162283004EDF58 /* Project object */;
+}
